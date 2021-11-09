@@ -81,7 +81,7 @@ function showNotes(){
         <div class="imp">${element.imp}</div>
         <div class="cardTitle">${index +1} ${element.title}</div>
         <div class="cardText">${element.text}</div>
-        <div class="time">${element.time} </br>${element.date}</div>
+        <div class="time">${element.date} |${element.time}</div>
         <div><button id="${index}" onclick="deleteNote(this.id)"class="delBtn">Delete</button></div>
     </div>
     </div>`;
