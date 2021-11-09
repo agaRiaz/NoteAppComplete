@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    border-radius:2px;
+    background: rgb(117,113,105);
+}
+
+.navLeft{
+    display: flex;
+    width:50%;
+    display:flex;
+    
+}
+#logo{
+    margin: 3px 45px;
+    padding: 7px 23px;
+   font-size:30px;
+   color:white;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+   font-style: italic;
+}
+
+
+
+.search{
+    width:48%;
+    display:flex;
+    justify-content: right;
+    
+   
+}
+
+.search input{
+    margin:6px 10px;
+    padding:8px 10px;
+    width:200px;
+    height:25px;
+    border:1px solid gray;
+    border-radius: 12px;
+   
+   
+}
+.search .btn{
+    color:white;
+    margin: 8px 12px;
+    padding:10px 10px;
+    width:80px;
+    height:40px;
+    border:1px solid lightgray;
+    border-radius: 12px;
+    background-color: rgb(117, 113 ,105);
+    font-family:  'sans-serif';
+    font-size: 15px;
+   
+}
+
+.search .btn:hover{
+   
+    background-color: rgb(69, 59, 38);
+   
+}
+.navLeft ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 6px 15px;
+    padding: 6px 25px;
+    font-size: 20px;
+    font-family: 'apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navLeft ul li a{
+   text-decoration: none;
+   color:white;
+}
+.navLeft ul li a:hover{
+   
+    color:purple;
+ }
+ .burger{
+     
+     display: none;
+     position: absolute;
+     cursor: pointer;
+     right: 5%;
+     top:15px;
+ 
+ }
+ .line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin:5px 3px;
+}
+
+.body h1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:40px;
+}
+ .container{
+     width: 100%;
+     height: 100%;
+     display: flex;
+ }
+
+ .entry{
+     width:27%;
+     margin:10px 10px;
+     height:100%;
+     background-color: rgb(252, 253, 253);
+ }
+ .entryBody{
+    
+    border:2px solid lightcyan;
+    margin:20px 15px;
+   
+}
+ .notesList{
+    width:67%;
+    height:100%;
+    margin:10px 10px;
+   background-color: rgb(233, 255, 255);
+   
+}
+.entryHead{
+    width:65%;
+    text-align: center;
+    margin:5px 5px;
+    
+    font-size:25px;
+    border-bottom:2px solid purple;
+    font-family:'Ubuntu', sans-serif ;
+}
+
+#noteTitle{
+    width:65%;
+    margin:2px 2px;
+    padding:5px 5px;
+    border:2px solid black;
+    border-radius:5px;
+    font-size:20px;
+    font-weight: bold;
+    font-family:'Ubuntu', sans-serif ;
+}
+#noteBody{
+    width:85%;
+   
+    margin:2px 2px;
+    padding:5px 5px;
+    border:2px solid black;
+    border-radius:5px;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.checkBox{
+    margin:8px 5px;
+    font-size:20px;
+   
+}
+#checkBox{
+   width: 30px;
+   height: 20px;
+   
+}
+.btnAdd button{
+    color:white;
+    width:100px;
+    height:45px;
+    background-color: rgb(16, 16, 54);
+    border:2px solid lightblue;
+    border-radius:5px;
+    margin:5px 5px;
+}
+.listHead{
+    margin:5px 5px;
+    padding:5px 5px;
+    text-align: center;
+    font-size:30px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom:1px solid rgb(235, 225, 225);
+    border-top: 1px solid rgb(235, 225, 225);
+
+}
+
+.allCards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.notesCard{
+    margin:10px 10px;
+    padding:6px 6px;
+    width:250px;
+    height:350px;
+    border:2px solid gray;
+    border-radius: 3px;
+}
+.imp{
+    color:red;
+    width:150px;
+    height:30px;
+    margin-top:0;
+    font-size:20px;
+    font-weight: bold;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+.cardTitle{
+    height:50px;
+    margin:2px 5px;
+    padding:3px 6px;
+    font-size: 25px;
+    font-style: italic;
+    font-family:'Ubuntu', sans-serif;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.cardText{
+    height:160px;
+    margin:2px 5px;
+    padding:3px 6px;
+    font-size: 18px;
+    font-family:'sans-serif';
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.time{
+    height:50px;
+    font-size:20px;
+    font-weight: bold;
+}
+.delBtn{
+font-size:15px;
+width:100px;
+height:35px;
+color:white;
+background-color: rgb(196, 21, 158);
+border-radius:6px;
+
+}
+
+
+
+@media only screen and (max-width: 1200px){
+
+
+    #logo{
+        margin: 3px 5px;
+        padding: 7px 5px;
+       
+    }
+    .navLeft ul li{
+        margin: 6px 2px;
+        padding: 6px 3px;
+       
+       
+    }
+   
+   
+}
+    
+@media only screen and (max-width: 685px){
+.navbar {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:350px;
+    transition: all 0.7s ease-out;
+}
+.navLeft{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.burger{
+    display:block;
+}
+.search{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+   flex-direction: column;
+}
+.entry{
+    width:100%;
+   
+}
+
+.notesList{
+    width:100%;
+    
+   
+}
+
+.notesCard{
+    margin:6px 6px;
+    padding:3px 3px;
+    width:100px;
+    height:300px;
+    
+}
+.imp{
+    font-size:10px;
+    width:50px;
+    
+}
+.navLeft ul li{
+    
+    display:block;
+    
+}
+.navToggle{
+    height:72px; 
+}
+.v-class-resp{
+    opacity: 0;
+}
+
+}

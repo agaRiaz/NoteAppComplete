@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Soft Notes</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navLeft">
+            <div id="logo">Soft Notes</div>
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Contact Us </a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input id="searchNote" type="text">
+            <button class="btn">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <div class="body">
+        <h1>Welcome to My Soft Notes</h1>
+        <div class="container">
+
+            <div class="entry">
+                <div class="entryBody">
+                    <div class="entryHead">
+                        <h3>Add A Note Here</h3>
+                    </div>
+                    <div><textarea name="title" id="noteTitle" cols="25" rows="2" placeholder="Title"></textarea></div>
+                    <div><textarea name="note" id="noteBody" cols="40" rows="10"
+                            placeholder="Enter Your Notes Here.."></textarea></div>
+                    <div class="checkBox"><input type="checkbox" id="checkBox"> Important</div>
+                    <div class="btnAdd" id="btnAdd"><button>ADD</button></div>
+                </div>
+            </div>
+            <div class="notesList">
+                <div class="listHead">Your Notes</div>
+                <div class="allCards" id="notesCard">
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
